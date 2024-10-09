@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .text{
+            /* background-color: red; */
+            height: 40vh;
+            width: 25%;
+            margin-left: 20%;
+            position: absolute;
+            top: 40%;
+        }
+        h3{
+            font-weight: normal;
+            font-size: 25px;
+            margin-top: -5px;
+        }
+        h1{
+            color: rgb(61, 106, 230);
+            font-size:40px;
+            margin-bottom:13px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .login{
+            background-color: white;
+            width: 26%;
+            height: 50vh;
+            margin-left: 50%;
+            margin-top: 15%;
+            box-shadow: 1px 1px 5px rgb(180, 176, 176);
+            
+        }
+        .main{
+            /* background-color: green; */
+            height: 40vh;
+            /* background-color: green; */
+        }
+        .login,.text{
+            display: inline-block;
+        }
+        .login>input{
+            width: 80%;
+            margin-top: 30px;
+            height: 30px;
+            box-shadow: 1px 1px 5px rgb(210, 212, 210);
+            border-width: 1px;
+            border: none;
+            /* border: 1px soild rgb(219, 205, 205); */
+            margin-left: 8%;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .login-btn{
+            background-color: #1877f2;
+            color: white;
+            width:85%;
+            height: 50px;
+            margin-left: 8%;
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 15px
+        }
+        .login>p{
+            color:#1877f2;
+            text-align: center;
+        }
+        hr{
+            width: 85%;
+        }
+        .create-btn{
+            width: 50%;
+            background-color:rgb(66, 210, 66);
+            height: 40px;
+            border: none;
+            margin-left: 25%;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="text">
+            <h1>facebook</h1>
+            <h3>Connect with friends and the world around you on Facebook </h3>
+        </div>
+        <div class="login">
+            <input type="email" placeholder="Email or Phone Number"><br>
+            <input type="password" placeholder="Enter Password"><br><br>
+            <button class="login-btn">Login</button>
+            <p>Forgot Password?</p>
+            <hr>
+            <button class="create-btn">Create new account</button>
+
+        </div>
+        
+    </div>
+</body>
+</html>
