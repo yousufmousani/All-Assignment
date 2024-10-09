@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Header Column 1</th>
+            <th>Header Column 2</th>
+            <th>Header Column 3</th>
+            <th>Header Column 4</th>
+        </tr>
+       <tr>
+        <td>Row 2 Item 1</td>
+        <td>Row 2 Item 2</td>
+        <th rowspan="3">Row 2 : Nested Table 1
+            <table>
+                <tr>
+                    <th>Row 1 Header</th>
+                    <th>Item</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Row 2 Header</th>
+                        <th>Item</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Row 3 Header</th>
+                        <th>Item</th>
+                    </tr>
+                </table>
+
+        <td colspan="2">Row 2 - Item 4 A second Line</td>
+       </tr>
+       <tr>
+        <th rowspan="5" colspan="1">Row 3 : Nested Table 2
+            <table>
+                <th>Row 1 Header</th>
+                <th>Item</th>
+                </table>
+                <table>
+                <th>Row 2 Header</th>
+                <th>Item</th>
+            </table>
+        </th>
+        <td>Row 3 - Item 2</td>  
+        <td>Row 3 - Item 3</td> 
+      </tr>
+    </table>
+</body>
+</html>
