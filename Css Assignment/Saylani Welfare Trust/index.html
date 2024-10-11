@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+       body{
+        margin: 0;
+        padding:0;
+       }
+    .container-fluid{
+        margin-bottom: 10px;
+    }
+         .start{
+            font-size: 10px;
+            background-color:#eee;
+            color:#444648;
+            height: 35px;
+            padding: 8px;
+         }
+         .btn-eng>button{
+            background-color: white;
+            border: none;
+            height: 35px;
+            margin-top: -10px;
+            width: 80px;
+            font-size: 12px;
+         }
+         @media screen and (max-width:575px){
+            .row{
+                height: 60px;
+            }
+         }
+         i{
+            color:#6a6c6d;
+            padding: 5px;
+            
+         }
+         .nav{
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+         }
+         .donate{
+            background-color:#0d6db7;
+            border-color: #0d6efd;
+            border-radius: 5px;
+            color: #fff;
+         }
+         .sponser{
+            background-color: #8dc63f;
+            border-color: #8dc63f;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 5px;
+         }
+         .nav-item:hover{
+            text-decoration:underline;
+            text-decoration-color:#8dc63f;
+         }
+         .saylani-image>img{
+            width:70%;
+            margin-left: 20%;
+            margin-top: 3%;
+         }
+         .saylani-image{
+            width: 50%;
+            /* background-color: red; */
+         }
+         .name{
+            /* background-color: yellow; */
+            height: 70vh;
+            width: 100%;
+            margin-bottom: 100px;
+
+         }
+         @media screen and (max-width:945px) {
+          .name{
+            /* height: 50vh; */
+            margin-bottom: 1px;
+          }
+         }
+         .welcome{
+            /* background-color: green; */
+            width:50%;
+         }
+         .welcome>h1{
+            margin:10%;
+            padding: 5%;
+            width: 50%;
+            font-size: 4 5px;
+            /* background-color: red; */
+            text-align: center;
+            margin-bottom: 0px;
+         }
+         @media screen and (max-width:950px){
+
+            .welcome>h1{
+                margin: 1%;
+                width: 100%;
+            }
+         }
+         @media screen and (max-width:644px){
+
+         .welcome{
+            width: 100%;
+            text-align: center;
+         }
+         .saylani-image{
+            display: none;
+         }
+}
+.donation-box{
+    background-color: rgba(182, 239, 73, .2);
+    padding: 10px;
+    min-height: 60px;
+    max-height: 60vh;
+    box-sizing: border-box;
+    
+
+}
+.general{
+    background-color:#424242;
+    color: white;
+    border-radius:2;
+}
+.blood-bank{
+    background-color: white;
+    height: 60%;
+    margin-top: 10px;
+    border-radius:6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-property:'transform-scale','color';
+    transition-duration: 1s,1s;
+   
+}
+.blood-bank:hover{
+  transform: scale(1);
+  background-color: #424242;
+  color: white;
+}
+
+.group{
+    margin-top: 10px;
+}
+.medical{
+    background-color: white;
+    height: 60%;
+    margin-top: 10px;
+    border-radius:6px;
+    margin-left: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-property:'transform-scale','color';
+    transition-duration: 1s,1s;
+}
+.medical:hover{
+  transform: scale(1.1);
+  background-color: #424242;
+  color: white;
+}
+.food{
+    background-color: white;
+    height: 60%;
+    margin-top: 10px;
+    border-radius:6px;
+    margin-left: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-property:'transform-scale','color';
+    transition-duration: 1s,1s;
+}
+.food:hover{
+  transform: scale(1.1);
+  background-color: #424242;
+  color: white;
+}
+.kifalat{
+    background-color: white;
+    height: 60%;
+    margin-top: 10px;
+    border-radius:6px;
+    margin-left: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-property:'transform-scale','color';
+    transition-duration: 1s,1s;
+}
+.kifalat:hover{
+  transform: scale(1.1);
+  background-color: #424242;
+  color: white;
+}
+.quick-donate{
+    background-color:#8dc63f;
+    height: 60%;
+    margin-top: 10px;
+    border-radius:6px;
+    margin-left: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition-property:'transform-scale';
+    transition-duration: 1s;
+    color: white;
+    font-size: 15px;
+}
+.quick-donate:hover{
+  transform: scale(1.1);
+}
+.slider-1>img{
+  width: 99% !important;
+  margin: 2% auto;
+  height: 80vh !important;
+}
+@media screen and (max-width:575px) {
+  .slider-1{
+    margin-top: 160px;
+  }
+  
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row start">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 info"><i class="fa-regular fa-envelope fa-lg"></i><a href="mailto:'saylaniwelfare'">info@saylaniWelfareUSA.com</a></div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 call"><i class="fa-solid fa-phone-flip"></i>833-786-0999</div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2 num"><i class="fa-brands fa-whatsapp fa-lg"></i>+92311129526</div>
+            <div class="col-6 col-sm-2 col-md-3 col-lg-5 col-xl-6 btn-eng"><Button>English</Button></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xxl bg-body-tertiary nav">
+        <div class="container-fluid">
+          <img src="Images/saylani-logo.png" class="navbar-brand col-lg-2 col-6 col-md-4" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item col-lg-2">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link" aria-current="page" href="#">Services</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#">Media</a>
+              </li>
+              <li class="nav-item col-lg-2">
+                <a class="nav-link" aria-current="page" href="#">Contact us</a>
+              </li>
+              <li class="nav-item col-lg-2 contact">
+                <a class="nav-link" href="#">Bank Details</a>
+              </li>
+              <li class="nav-item col-lg-2 website">
+                <a class="nav-link" aria-current="page" href="#">Other Websites</a>
+              </li>
+              <button class="col-sm-6 col-xl-2 col-lg-6 donate">DONATE NOW</button>
+              <button class="col-sm-6 col-xl-2 ol-lg-6 sponser">BE SPONSOR</button>
+            </ul>
+        </div>
+        </div>
+      </nav>
+      <div class="row name">
+        <div class="col col-lg-6 col-md-5 col-sm-4 welcome">
+            <h1>Welcome to the <span style="color: rgb(97, 136, 38);">saylani</span> Welfare</h1>
+            <p style="font-size: 25px; margin-left: 5%; font-weight: bold;">The largest NGO offering free <span style="color: #0d6db7;" id="element"></span></p><br>
+            <p style="font-size: 18px; margin-left: 5%; text-align: justify;">Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.</p>
+            <button style="margin: 15px 25%; background-color: transparent; height: 10%;width: 25%;text-align: start;">Explore More</button>
+ 
+        </div>
+        <div class="col col-lg-6 col-md-7 col-sm-4 saylani-image animate__animated animate__backInRight">
+            <img src="Images/saylani-image.png" alt="">
+        </div>
+        
+        </div>
+        <div class="container-fluid">
+            <div class="row donation-box">
+                <div class="col-sm-12 col-xxl-3 col-lg-6 col-md-6">
+                    <div class="input-group group">
+                        <span class="input-group-text general">General</span>
+                        <input type="text" placeholder="0" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text general">Rs.</span>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-xxl-3 col-lg-5 col-md-5 blood-bank">
+                    <p>Blood Bank/Thalassemia Treatment</p>
+                </div>
+                <div class="col-sm-3 col-xxl-2 col-lg-6 col-md-6 kifalat">
+                    <p>Family Kifalat</p>
+                </div>
+                <div class="col-sm-3 col-xxl-1 col-lg-5 col-md-5 medical">
+                    <p>Medical</p>
+                </div>
+                <div class="col-sm-3 col-xxl-1 col-lg-6 col-md-6 food">
+                    <p>Food</p>
+                </div>
+                <div class="col-sm-2 col-xxl-1 col-lg-5 col-md-5 quick-donate">
+                    <p>Quick Donate</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active slider-1">
+              <img src="Images/slider-1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+     
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Health care and lot more ,' , 'monthly family support ,' , 'assistance to disaster affectes ,' , 'education ,' , 'IT and vocational traning ,' , 'daiy meals ,' , 'clear water ,'],
+          typeSpeed: 80,
+        });
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
