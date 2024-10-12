@@ -1,6 +1,6 @@
 //Q:1
 
-alert ('Welcome to our Website')/
+alert ('Welcome to our Website')
 
 //Q:2
 
