@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mousani Shop</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body{
+            /* background-image: url(Images/carousal_background.d77d94e41c5a71ae581f.png);
+            background-position: 20px; */
+            background-color: rgb(3, 22, 55);
+            
+        }
+        .logo>a>img{
+            height: 70px;
+        }
+        .navbar{
+            background-color: black !important;
+            
+        }
+        .navbar-toggler{
+            color: white;
+            background-color: white;
+        }
+        .offcanvas-body{
+            background-color: black;
+        }
+        .offcanvas-header{
+            background-color: rgb(8, 40, 97);
+        }
+        .offcanvas-header>h5{
+            color: white;
+        }
+        .offcanvas-body>ul>li>a{
+            color: white !important;
+        }
+        .offcanvas-body>ul>li>a:hover{
+            background-color: rgb(8, 40, 97);
+        }
+        .dropdown-menu{
+            background-color: black;
+        }
+        
+        .dropdown-menu>li>a{
+            color: white !important;
+        }
+        .dropdown-menu>li>a:hover{
+            background-color: rgb(8, 40, 97);
+        }
+        .mousani-card>img{
+            width: 98% !important;
+            margin-top: 3%;
+           height: 80vh;
+           margin-left:1%;
+        }
+        @media screen and (max-width:500px) and (min-width:400px){
+
+            .mousani-card>img{
+                height:20vh;
+                margin-top: 2% !important;
+            }
+            .navbar{
+                height: 10vh;
+            }
+            .logo>a>img{
+            height: 7vh;
+        }
+        .navbar-toggler{
+            background-color: green;
+            height: 5vh;
+
+        }
+        .text>h3{
+            margin-top: -8% !important;
+            text-align: center;
+        }
+        }
+        @media screen and (max-width:400px) and (min-width:250px){
+
+            .mousani-card>img{
+                height:20vh;
+                margin-top: 2% !important;
+            }
+            .navbar{
+                height: 10vh;
+            }
+            .logo>a>img{
+            height: 7vh;
+        }
+        .navbar-toggler{
+            height: 5vh;
+
+        }
+        .text>h3{
+            margin-top: -10% !important;
+            text-align: center;
+        }
+        }
+        @media screen and (max-width:250px) and (min-width:100px){
+            .mousani-card>img{
+                margin-top: 2% !important;
+                height:20vh;
+            }
+            .navbar{
+                height: 10vh;
+            }
+            .logo>a>img{
+            height: 7vh;
+        }
+        .navbar-toggler{
+            height: 5vh;
+
+        }
+        .text>h3{
+            margin-top: -15% !important;
+            text-align: center;
+        }
+        }
+        .text>h3,p{
+            color: white;
+            text-align: center;
+            width:100%;
+        }
+        .text>p{
+            font-size: 15px;
+            width: 80%;
+            margin-left: 9%;
+        }
+        .text{
+            width: 100%;
+        }
+        .category{
+            /* background-color: white; */
+            margin: 0;
+
+        }
+        .category > .Plastic{
+            height: 10vh;
+            background-color: rgb(2, 23, 58);
+            border: 2px solid rgb(3, 42, 109);
+            height: 20vh;
+            
+            
+        }
+        .category > .Plastic>h3{
+          color:rgb(198, 210, 224);
+          text-shadow: 2px 2px 5px rgb(35, 109, 220);
+          text-align: center;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid logo">
+          <a class="navbar-brand" href="#"><img src="Images/Mousani Logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mousani Shop</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=61566788683651 ">Facebook</a></li>
+                    <li><a class="dropdown-item" href="https://www.youtube.com/@MousaniShop">Youtube</a></li>
+                    <li><a class="dropdown-item" href="https://wa.me/923149626995">Whatsapp</a></li>
+                    <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br><br>
+
+<div>
+    <div class="text">
+        <h3>Welcome to Mousani Shop</h3>
+        <p>Your Ultimate Destination for Gadget Enthusiasts, your go-to YouTube channel for all things gadgets! From the latest tech innovations to in-depth reviews and captivating demonstrations, Mousani Shop is dedicated to bringing you the most exciting and informative content in the world of gadgets. At Mousani Shop, we understand the thrill of unboxing a new gadget and the satisfaction of finding the perfect tech companion. That's why our channel is committed to delivering high-quality, engaging videos that cater to gadget enthusiasts of all kinds.looking for detailed product reviews or a casual consumer seeking guidance on the best gadgets in the market, Mousani Shop has got you covered.Product ShowcasesGet up close and personal with the hottest gadgets on the market as we showcase their features performance and real-world applications.</p>
+    </div>
+</div>
+
+<br>
+
+<!-- Mousani Card -->
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active mousani-card" data-bs-interval="10000">
+        <img src="Images/Mousani Shop card.jpg" class="d-block w-100 wow animate__animated animate__slideInLeft" alt="...">
+      </div>
+    </div>
+</div>
+      <br><br><br>
+  <!-- <div class="blue-background">
+
+<img src="Images/plastic.webp" alt="">
+</div> -->
+
+<div class="container-fluid">
+    <div class="row category container-fluid">
+        <div class="col-12 col-lg-3 Plastic"><h3>Plastic Items</h3></div>
+        <div class="col-12 col-lg-3 Plastic"><h3>Plastic Items</h3></div>
+        <div class="col-12 col-lg-3 Plastic"><h3>Plastic Items</h3></div>
+        <div class="col-12 col-lg-3 Plastic"><h3>Plastic Items</h3></div>
+    </div>
+</div>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
