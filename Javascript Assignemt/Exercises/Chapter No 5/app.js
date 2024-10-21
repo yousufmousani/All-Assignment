@@ -59,6 +59,17 @@
 // document.write(Table+'x'+'9'+'='+Table*9+'<br>')
 // document.write(Table+'x'+'10'+'='+Table*10+'<br>')
 
+
+// Task 6
+
+// var user1 = prompt('Enter Celsius temperature')
+// var user2 = prompt('Enter Fahrenheit temperature')
+// var Celsius = user1
+// var Fahrenheit = user2
+
+// document.write(Celsius = (Fahrenheit-32)*5/9 +'<br>')
+// document.write(Fahrenheit = (Celsius*9/5)+32)
+
 // Task 7
 
 // var price1 = 600
@@ -88,7 +99,7 @@
 // document.write('Obtain Marka is '+Obtainmarks+'<br>')
 // document.write('Percentage is '+Result)
 
-// Task 8
+// Task 9
 
 // alert('1 dollar is Equal to 104 Pakistani Rupees')
 // var dollar = prompt('Enter Dollor Quanity')
@@ -99,3 +110,24 @@
 // var add = dollar*104+Riyal*28
 
 // document.write('Total Currency in PKR is '+add)
+
+// Task 10
+
+// Task 11
+
+// var Birthyear = +prompt('Enter Your Birth Year')
+// var Currentyear = +prompt('Enter Current Year')
+// document.write(Currentyear-Birthyear)
+
+// Task 13
+
+// var snack = prompt('Enter Your Favourite Snack')
+// var Age = +prompt('Enter Your Current age')
+// var mage = +prompt('Enter Your Maximum age')
+// var amount = prompt('Enter the Amount per day')
+// var total = (mage-Age)
+
+// document.write('You will need '+total*amount +' '+snack+' to last you until the ripe old age of '+total)
+
+
+
