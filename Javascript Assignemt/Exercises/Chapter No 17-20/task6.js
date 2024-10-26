@@ -4,13 +4,13 @@ var array1 = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
 document.write('<b>Counting</b><br>')
 
 
-for(var i = 0;i<15;i++){
-    document.write(array1[i]+',')
+for(var i = 1;i<= 15;i++){
+    document.write([i]+',')
 }
 
 document.write('<br><br><b>Reverse Counting</b><br>')
-for(var i = 9;i>=0;i--){
-    document.write(array1[i]+',')
+for(var i = 10;i>=1;i--){
+    document.write([i]+',')
 }
 
 
