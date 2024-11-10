@@ -46,5 +46,65 @@
 // var change = Number(string)
 // document.write('Value '+string+'<br>'+'Type : '+typeof(string)+'<br>'+'Value '+string+'<br>'+'Type : '+typeof(change))
 
+// Task 10
+
+// var user = prompt('Enter Text')
+// var change = user.toUpperCase()
+// document.write(`user input : ${user} <br> upper case : ${change}`)
+
+
+// Task 11
+
+// var user = prompt('Enter text')
+// var change = user.slice(0,1).toUpperCase()+user.slice(1).toLowerCase()
+// document.write(`user input : ${user} <br> Title case : ${change}`)
+
+// Task 12
+
+// var num = 35.36
+// var convert = num.toString()
+// var copy = convert.slice(0,2)+convert.slice(3)
+// console.log(num)
+// console.log(copy)
+
+// Task 13
+
+// var user = prompt('Enter Your Name')
+// var flag = false
+
+// for(var i = 0;i<user.length;i++){
+//     if(user[i]>='!' && user[i] <='+'){
+//         flag = true
+//         break
+
+// }
+
+// }
+// if(flag){
+//     alert('Enter Valid Name Without any Symbol')
+// }
+
+
+// Task 14
+
+// var items = ['cake', 'apple pie', 'cookie', 'chips', 'patties']
+// var user = prompt('Search Item').slice(0).toLowerCase()
+// var flag = false
+
+// for(var i = 0;i<items.length;i++){
+//     if(user == items[i]){
+//         flag = true
+//         break
+
+//         alert(user +' is available at index '+ i+ ' in our Bakery')
+//     }
+
+// }
+// if(flag){
+//     alert(user +' is available at index '+ i+ ' in our Bakery')
+// }else(alert('We are sorry '+ user + 'is not available in our Bakery'))
+
+
+
 
 
