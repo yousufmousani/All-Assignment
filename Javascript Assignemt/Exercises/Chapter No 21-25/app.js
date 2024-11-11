@@ -104,7 +104,54 @@
 //     alert(user +' is available at index '+ i+ ' in our Bakery')
 // }else(alert('We are sorry '+ user + 'is not available in our Bakery'))
 
+// Task 15
 
+// var user = prompt('Enter Your password')
+// var flag = 0
+
+// for(var i = 0;i<user.length;i++){
+//     if(user[0] >= 1 ||  user[0]<=0){
+//         flag = 1
+//     }else if(user.length < '6'){
+//         flag = 2
+
+//     }else if(user[i]>= 'a' || user[i]<='y'){
+//         if(user[i]>= 0 || user[i]<= 10){
+
+//         }else(flag = 3)
+
+//         }
+        
+
+// }
+// if(flag == 1){
+//     alert('Password should not start with a number')
+// }if(flag == 2){
+//     alert('Password must at least 6 characters long')
+// }if(flag == 3){
+//     alert('Password should contain alphabets and numbers')
+// }
+
+
+
+// Task 16
+
+// var university = 'University of Karachi';
+// var split = university.split('')
+// for(var i = 0;i<university.length;i++){
+//     document.write(split[i]+'<br>')
+
+// }
+
+// Task 17
+
+// var user = prompt('Enter text')
+// var length = user.length
+// var characters = user.charAt(length-1)
+// document.write('User Input : '+user+'<br>')
+// document.write('Last characters of input : '+characters+'<br>')
+
+// Task 18
 
 
 
