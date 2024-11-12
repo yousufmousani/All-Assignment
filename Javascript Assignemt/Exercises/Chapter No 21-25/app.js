@@ -151,7 +151,3 @@
 // document.write('User Input : '+user+'<br>')
 // document.write('Last characters of input : '+characters+'<br>')
 
-// Task 18
-
-
-
